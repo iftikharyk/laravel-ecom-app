@@ -17,4 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/admin', 'admin.dashboard.index');
+require 'admin.php';
+
+// Route::view('/admin', 'admin.dashboard.index');
+// Route::view('/admin/login', 'admin.auth.login');
